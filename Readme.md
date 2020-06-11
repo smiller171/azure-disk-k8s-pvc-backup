@@ -7,7 +7,7 @@ Helm:
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: {{ include "sftp.fullname" . }}-volume-claim
+  name: {{ include "chart.fullname" . }}-volume-claim
 spec:
   schedule: "0 0 * * *"
   jobTemplate:
